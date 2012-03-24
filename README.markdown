@@ -10,8 +10,9 @@ In your finishedlaunching method you can configure the iRate instance as needed,
 			public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 			{
 						iRate r = iRate.SharedInstance();
-						r.AppStoreID = 458519527;
-						r.ApplicationBundleID = "com.alexsoto.yomexicano";
+						// you can find this info in itunes connect ;)
+						r.AppStoreID = <your appstore id here>;
+						r.ApplicationBundleID = "<your bundle identifier here>";
 						r.Debug = true;
 						.....
 			}
