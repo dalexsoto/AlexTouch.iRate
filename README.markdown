@@ -10,10 +10,32 @@ In your finishedlaunching method you can configure the iRate instance as needed,
 			public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 			{
 						iRate r = iRate.SharedInstance();
+						
+						r.UserDidAttemptToRateApp += delegate {
+							Console.WriteLine("User Did Attemp to Rate App");
+						};
+
+						r.CouldNotConnectToAppStore += delegate {
+							Console.WriteLine("Ups!! Could not connect to AppStore");
+						};
+
+						r.DidDetectAppUpdate += delegate {
+							Console.WriteLine("Yaay!! App update Detected");
+						};
+
+						r.UserDidDeclineToRateApp += delegate {
+							Console.WriteLine("User Declined to rate app #SadFace :'( ");
+						};
+
+						r.UserDidRequestReminderToRateApp += delegate {
+							Console.WriteLine("User Requested to be reminded l8ters");
+						};
+
+						r.PreviewMode = true; // Set this to true If you want to test it
+						
 						// you can find this info in itunes connect ;)
 						r.AppStoreID = <your appstore id here>;
 						r.ApplicationBundleID = "<your bundle identifier here>";
-						r.Debug = true;
 						.....
 			}
 
