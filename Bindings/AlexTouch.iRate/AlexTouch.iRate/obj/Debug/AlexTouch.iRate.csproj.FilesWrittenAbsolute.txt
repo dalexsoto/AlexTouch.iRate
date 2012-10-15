@@ -1,4 +1,0 @@
-/Users/Alex/Projects/AlexTouch.iRate/AlexTouch.iRate/bin/Debug/AlexTouch.iRate.dll.mdb
-/Users/Alex/Projects/AlexTouch.iRate/AlexTouch.iRate/bin/Debug/AlexTouch.iRate.dll
-/Users/Alex/Projects/AlexTouch.iRate/AlexTouch.iRate/obj/Debug/AlexTouch.iRate.dll
-/Users/Alex/Projects/AlexTouch.iRate/AlexTouch.iRate/obj/Debug/AlexTouch.iRate.dll.mdb
